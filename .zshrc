@@ -106,14 +106,10 @@ ZSH_DISABLE_COMPFIX=true
 #
 
 # Example aliases
-#alias zshconfig="vim ~/.zshrc"
-#alias ohmyzsh="vim ~/.oh-my-zsh"
-#alias reload="source ~/.zshrc"
-#alias ls="ls -lah"
-#alias gw="./gradlew"
-#alias mk="minikube"
-
 source $HOME/.zsh/aliases
+
+# Google Cloud CLI
+source $HOME/.gcloudrc
 
 # Coursier -> Scala Artrifact  Fetcher
 export PATH="$PATH:/Users/lopan/Library/Application Support/Coursier/bin"
