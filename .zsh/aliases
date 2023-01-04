@@ -1,0 +1,8 @@
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias reload="source ~/.zshrc"
+alias ls="ls -lah"
+alias gw="./gradlew"
+alias mk="minikube"
+
