@@ -109,7 +109,10 @@ ZSH_DISABLE_COMPFIX=true
 source $HOME/.zsh/aliases
 
 # Google Cloud CLI
-source $HOME/.gcloudrc
+if [ -z $(which gcloud) ]
+then 
+    source $HOME/.gcloudrc
+fi
 
 # Coursier -> Scala Artrifact  Fetcher
 export PATH="$PATH:/Users/lopan/Library/Application Support/Coursier/bin"
