@@ -109,7 +109,7 @@ ZSH_DISABLE_COMPFIX=true
 source $HOME/.zsh/aliases
 
 # Google Cloud CLI
-if [ -z $(which gcloud) ]
+if [ -x $(command -v gcloud) ]
 then 
     source $HOME/.gcloudrc
 fi
@@ -122,6 +122,9 @@ export PATH=$PATH:$HOME/bin
 
 #NVM
 source ~/.nvm/nvm.sh
+
+# Starship Prompt
+eval "$(starship init zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
